@@ -54,7 +54,7 @@ The Bitcoin Script Analysis system analyzes Bitcoin transactions to understand c
 
 2. **Run the analysis**:
    ```bash
-   cd tools/token-analyzer
+   cd researchers/token-analyzer
    source venv/bin/activate
    python bitcoin_transaction_analyzer.py
    ```
@@ -68,7 +68,7 @@ The Bitcoin Script Analysis system analyzes Bitcoin transactions to understand c
 The Bitcoin Script Analysis automatically appears in layer reviews when:
 
 1. **Layer has a BTC Custody section** (most Bitcoin layers)
-2. **Analysis file exists** for that layer in `tools/token-analyzer/analysis-reports/`
+2. **Analysis file exists** for that layer in `researchers/token-analyzer/analysis-reports/`
 3. **Layer name matches** the analysis file naming convention
 
 **File naming**: `bitcoin_transaction_{layer_slug}_{tx_hash}.json`
@@ -111,7 +111,7 @@ Trust Assumption Review
 ## File Structure
 
 ```
-tools/token-analyzer/
+researchers/token-analyzer/
 ├── bitcoin_transaction_analyzer.py     # Main analyzer
 ├── bitcoin_script_analyzer.py          # Script parsing
 ├── analyzer_base.py                    # Shared utilities
